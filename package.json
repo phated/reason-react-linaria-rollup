@@ -1,0 +1,31 @@
+{
+  "name": "reason-react-linaria-rollup",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "export BS_CMT_POST_PROCESS_CMD=\"gentype\" && bsb -make-world",
+    "start": "beefy :Index.js --index index.html --bundler rollup -- -c rollup.config.js --silent",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "reason-react": ">=0.4.0"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.8",
+    "bs-platform": "^4.0.18",
+    "gentype": "^2.5.1",
+    "linaria": "^1.0.0-beta.13",
+    "rollup": "^1.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-css-only": "^0.4.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-replace": "^2.1.0"
+  }
+}
